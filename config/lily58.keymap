@@ -142,7 +142,7 @@
 &kp K_MUTE  &kp K_PREV            &kp K_PLAY_PAUSE    &kp K_NEXT         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                         &trans     &trans              &trans              &trans               &trans                &trans
 &trans      &kp EXCL              &kp AT              &kp HASH           &kp DLLR           &kp PRCNT                               &kp CARET  &kp AMPS            &kp STAR            &kp FSLH             &trans                &trans
 &trans      &hrm_lshift LSHFT N1  &hrm_left LCTRL N2  &hrm_left LALT N3  &hrm_left LGUI N4  &kp N5                                  &kp N6     &hrm_right RGUI N7  &hrm_right RALT N8  &hrm_right RCTRL N9  &hrm_rshift RSHFT N0  &trans
-&trans      &trans                &trans              &trans             &trans             &kp EQUAL        &kp LBKT    &kp RBKT   &kp PLUS   &kp MINUS           &kp TILDE           &kp DOT              &trans                &trans
+&trans      &trans                &trans              &kp TILDE          &kp UNDER          &kp EQUAL        &kp LBKT    &kp RBKT   &kp PLUS   &kp MINUS           &kp COMMA           &kp DOT              &trans                &trans
                                                       &trans             &trans             &trans           &trans      &kp SPACE  &trans     &trans              &trans
             >;
 
@@ -170,16 +170,6 @@
         };
 
         Both {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_4 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
