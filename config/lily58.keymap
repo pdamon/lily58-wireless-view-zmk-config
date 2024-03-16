@@ -123,7 +123,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        Base {
             // ------------------------------------------------------------------------------------------------------------
             // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
             // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
@@ -136,14 +136,14 @@
 &kp ESCAPE  &kp N1  &kp N2  &kp N3             &kp N4               &kp N5                        &kp N6  &kp N7               &kp N8              &kp N9   &kp N0         &kp EQUAL
 &kp TAB     &kp Q   &kp W   &kp E              &kp R                &kp T                         &kp Y   &kp U                &kp I               &kp O    &kp P          &kp BACKSLASH
 &kp LCTRL   &kp A   &kp S   &hrm_left LCTRL D  &hrm_lshift LSHFT F  &kp G                         &kp H   &hrm_rshift RSHFT J  &hrm_right RCTRL K  &kp L    &kp SEMICOLON  &kp SINGLE_QUOTE
-&kp LSHFT   &kp Z   &kp X   &kp C              &kp V                &kp B   &trans     &trans     &kp N   &kp M                &kp COMMA           &kp DOT  &kp FSLH       &kp RSHFT
+&kp LSHFT   &kp Z   &kp X   &kp C              &kp V                &kp B   &mo 3      &mo 3      &kp N   &kp M                &kp COMMA           &kp DOT  &kp FSLH       &kp RSHFT
                             &kp LGUI           &kp BSPC             &mo 1   &kp RET    &kp SPACE  &mo 2   &kp DEL              &kp LALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        raise_layer {
+        NavSym {
             // ------------------------------------------------------------------------------------------------------------
             // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
@@ -151,19 +151,19 @@
             // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
             //                     |      |      |      |        |  |       |      |       |       |
 
-            display-name = "Raise";
+            display-name = "NavSym";
             bindings = <
-&kp C_MUTE  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP                          &kp F7  &kp F8     &kp F9        &kp F10    &kp F11  &kp F12
-&trans      &trans      &kp BSLH          &kp QMARK   &kp LBKT      &kp RBKT                              &trans  &kp CARET  &kp UP_ARROW  &kp DLLR   &trans   &ctrl_pause
-&kp CAPS    &kp DQT     &kp GRAVE         &kp SQT     &kp LPAR      &kp RPAR                              &kp LT  &kp LEFT   &kp DOWN      &kp RIGHT  &kp GT   &kp INS
-&trans      &trans      &trans            &kp PIPE    &kp LBRC      &kp RIGHT_BRACE  &trans    &trans     &trans  &trans     &trans        &trans     &trans   &trans
-                                          &trans      &trans        &trans           &trans    &kp LC(Y)  &trans  &trans     &trans
+&kp C_MUTE  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP                          &kp F7   &kp F8     &kp F9        &kp F10    &kp F11  &kp F12
+&trans      &trans      &kp BSLH          &kp PIPE    &kp LBKT      &kp RBKT                              &trans   &kp CARET  &kp UP_ARROW  &kp DLLR   &trans   &ctrl_pause
+&kp CAPS    &kp DQT     &kp GRAVE         &kp QMARK   &kp LPAR      &kp RPAR                              &trans   &kp LEFT   &kp DOWN      &kp RIGHT  &trans   &kp INS
+&trans      &trans      &trans            &trans      &kp LBRC      &kp RIGHT_BRACE  &trans    &trans     &trans   &trans     &trans        &trans     &trans   &trans
+                                          &trans      &trans        &trans           &trans    &kp LC(Y)  &kp SQT  &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        lower_layer {
+        Numbers {
             // ------------------------------------------------------------------------------------------------------------
             // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
             // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
@@ -171,19 +171,19 @@
             // |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
             //                     |      |      |      |        |  |       |      |       |       |
 
-            display-name = "Lower";
+            display-name = "Numbers";
             bindings = <
-&kp F1  &kp F2  &kp F3     &kp F4    &kp F5     &kp F6                      &kp F7     &kp F8     &kp F9     &kp F10   &kp F11  &kp F12
-&trans  &trans  &kp COLON  &kp HASH  &kp MINUS  &kp EXCL                    &kp TILDE  &kp UNDER  &kp STAR   &kp FSLH  &trans   &trans
-&trans  &kp N7  &kp N2     &kp N3    &kp N4     &kp N5                      &kp N6     &kp N1     &kp N8     &kp N9    &trans   &trans
-&trans  &trans  &trans     &kp AMPS  &kp PLUS   &kp AT    &trans    &trans  &kp PRCNT  &kp EQUAL  &kp COMMA  &kp DOT   &trans   &trans
-                           &trans    &trans     &trans    &kp N0    &trans  &trans     &trans     &trans
+&kp F1  &kp F2  &kp F3     &kp F4    &kp F5    &kp F6                          &kp F7     &kp F8    &kp F9     &kp F10    &kp F11  &kp F12
+&trans  &trans  &kp COLON  &kp HASH  &kp SEMI  &kp AMPS                        &kp TILDE  &kp FSLH  &kp PLUS   &kp MINUS  &trans   &trans
+&trans  &kp N4  &kp N3     &kp N2    &kp N1    &kp N5                          &kp N9     &kp N0    &kp N6     &kp N7     &kp N8   &trans
+&trans  &trans  &kp LT     &kp GT    &kp EXCL  &kp AT     &trans       &trans  &kp PRCNT  &kp STAR  &kp COMMA  &kp DOT    &trans   &trans
+                           &trans    &trans    &kp UNDER  &kp EQUAL    &trans  &trans     &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        Both {
+        Bluetooth {
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &bt BT_CLR_ALL
 &trans      &trans        &trans        &trans        &trans        &trans                          &trans         &trans         &trans         &trans         &trans         &trans
@@ -191,15 +191,10 @@
 &trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans         &trans         &trans         &trans         &trans         &trans
                                         &trans        &trans        &trans        &trans    &trans  &trans         &trans         &trans
             >;
+
+            label = "Bluetooth";
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        tri_layer {
-            if-layers = <2 1>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
