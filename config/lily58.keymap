@@ -97,14 +97,15 @@
         };
 
         to_colemak {
-            bindings = <&to 4>;
+            bindings = <&tog 4>;
             key-positions = <0 11>;
             layers = <0>;
         };
 
         to_qwerty {
-            bindings = <&to 0>;
+            bindings = <&tog 0>;
             key-positions = <0 11>;
+            layers = <4>;
         };
     };
 
