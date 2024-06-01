@@ -145,11 +145,11 @@
 
             display-name = "Qwerty";
             bindings = <
-&kp ESCAPE  &kp N1  &kp N2  &kp N3             &kp N4               &kp N5                        &kp N6  &kp N7               &kp N8              &kp N9   &kp N0         &kp EQUAL
-&kp TAB     &kp Q   &kp W   &kp E              &kp R                &kp T                         &kp Y   &kp U                &kp I               &kp O    &kp P          &kp BACKSLASH
-&kp LCTRL   &kp A   &kp S   &hrm_left LCTRL D  &hrm_lshift LSHFT F  &kp G                         &kp H   &hrm_rshift RSHFT J  &hrm_right RCTRL K  &kp L    &kp SEMICOLON  &kp SINGLE_QUOTE
-&kp LSHFT   &kp Z   &kp X   &kp C              &kp V                &kp B   &mo 4      &mo 2      &kp N   &kp M                &kp COMMA           &kp DOT  &kp FSLH       &kp RSHFT
-                            &kp LGUI           &kp BSPC             &mo 2   &kp RET    &kp SPACE  &mo 3   &kp DEL              &kp LALT
+&kp ESCAPE  &kp N1  &kp N2            &kp N3             &kp N4               &kp N5                        &kp N6  &kp N7               &kp N8              &kp N9             &kp N0         &kp EQUAL
+&kp TAB     &kp Q   &kp W             &kp E              &kp R                &kp T                         &kp Y   &kp U                &kp I               &kp O              &kp P          &kp BACKSLASH
+&kp LCTRL   &kp A   &hrm_left LALT D  &hrm_left LCTRL D  &hrm_lshift LSHFT F  &kp G                         &kp H   &hrm_rshift RSHFT J  &hrm_right RCTRL K  &hrm_right RALT L  &kp SEMICOLON  &kp SINGLE_QUOTE
+&kp LSHFT   &kp Z   &kp X             &kp C              &kp V                &kp B   &mo 4      &mo 2      &kp N   &kp M                &kp COMMA           &kp DOT            &kp FSLH       &kp RSHFT
+                                      &kp LGUI           &kp BSPC             &mo 2   &kp RET    &kp SPACE  &mo 3   &kp DEL              &kp LALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -158,11 +158,11 @@
         Colemak {
             display-name = "Colemak";
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3             &kp N4               &kp N5                        &kp N6  &kp N7               &kp N8              &kp N9   &kp N0  &trans
-&kp TAB    &kp Q   &kp W   &kp F              &kp P                &kp B                         &kp J   &kp L                &kp U               &kp Y    &trans  &trans
-&kp LCTRL  &kp A   &kp R   &hrm_left LCTRL S  &hrm_lshift LSHFT T  &kp G                         &kp K   &hrm_rshift RSHFT N  &hrm_right RCTRL E  &kp I    &kp O   &trans
-&kp LSHFT  &kp Z   &kp X   &kp C              &kp D                &kp V   &mo 4      &mo 2      &kp M   &kp H                &kp COMMA           &kp DOT  &trans  &kp RSHFT
-                           &kp LGUI           &kp BSPC             &mo 2   &kp RET    &kp SPACE  &mo 3   &kp DEL              &kp LALT
+&kp ESC    &kp N1  &kp N2            &kp N3             &kp N4               &kp N5                        &kp N6  &kp N7               &kp N8              &kp N9             &kp N0  &trans
+&kp TAB    &kp Q   &kp W             &kp F              &kp P                &kp B                         &kp J   &kp L                &kp U               &kp Y              &trans  &trans
+&kp LCTRL  &kp A   &hrm_left LALT R  &hrm_left LCTRL S  &hrm_lshift LSHFT T  &kp G                         &kp K   &hrm_rshift RSHFT N  &hrm_right RCTRL E  &hrm_right RALT I  &kp O   &trans
+&kp LSHFT  &kp Z   &kp X             &kp C              &kp D                &kp V   &mo 4      &mo 2      &kp M   &kp H                &kp COMMA           &kp DOT            &trans  &kp RSHFT
+                                     &kp LGUI           &kp BSPC             &mo 2   &kp RET    &kp SPACE  &mo 3   &kp DEL              &kp LALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -178,11 +178,11 @@
 
             display-name = "NavSym";
             bindings = <
-&kp C_MUTE  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP                          &kp F7   &kp F8     &kp F9        &kp F10    &kp F11  &kp F12
-&trans      &trans      &kp BSLH          &kp PIPE    &kp LBKT      &kp RBKT                              &trans   &kp CARET  &kp UP_ARROW  &kp DLLR   &trans   &ctrl_pause
-&kp CAPS    &kp DQT     &kp GRAVE         &kp QMARK   &kp LPAR      &kp RPAR                              &trans   &kp LEFT   &kp DOWN      &kp RIGHT  &trans   &kp INS
-&trans      &trans      &trans            &trans      &kp LBRC      &kp RIGHT_BRACE  &trans    &trans     &trans   &trans     &trans        &trans     &trans   &trans
-                                          &trans      &trans        &trans           &trans    &kp LC(Y)  &kp SQT  &trans     &trans
+&kp C_MUTE  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP                          &kp F7     &kp F8     &kp F9        &kp F10    &kp F11          &kp F12
+&trans      &trans      &kp BSLH          &kp PIPE    &kp LBKT      &kp RBKT                              &kp PG_UP  &kp CARET  &kp UP_ARROW  &kp DLLR   &kp PAUSE_BREAK  &ctrl_pause
+&trans      &kp DQT     &kp GRAVE         &kp QMARK   &kp LPAR      &kp RPAR                              &kp PG_DN  &kp LEFT   &kp DOWN      &kp RIGHT  &kp FSLH         &kp INS
+&trans      &trans      &trans            &trans      &kp LBRC      &kp RIGHT_BRACE  &trans    &trans     &trans     &kp HOME   &kp END       &kp PSCRN  &kp CAPS         &trans
+                                          &trans      &trans        &trans           &trans    &kp LC(Y)  &kp SQT    &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
