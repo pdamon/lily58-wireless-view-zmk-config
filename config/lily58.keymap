@@ -181,7 +181,7 @@
 &kp C_MUTE  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP                         &kp F7     &kp F8     &kp F9        &kp F10    &kp F11          &kp F12
 &trans      &trans      &kp BSLH          &kp PIPE    &kp LBKT      &kp RBKT                             &kp PG_UP  &kp CARET  &kp UP_ARROW  &kp DLLR   &kp PAUSE_BREAK  &ctrl_pause
 &trans      &kp DQT     &kp GRAVE         &kp QMARK   &kp LPAR      &kp RPAR                             &kp PG_DN  &kp LEFT   &kp DOWN      &kp RIGHT  &kp LC(Y)        &kp INS
-&trans      &trans      &trans            &trans      &kp LBRC      &kp RIGHT_BRACE  &trans    &trans    &trans     &kp HOME   &kp END       &kp PSCRN  &kp CAPS         &trans
+&trans      &trans      &trans            &trans      &kp LBRC      &kp RIGHT_BRACE  &trans    &trans    &kp TILDE  &kp HOME   &kp END       &kp PSCRN  &kp CAPS         &trans
                                           &trans      &trans        &trans           &trans    &kp FSLH  &kp SQT    &trans     &trans
             >;
 
@@ -198,11 +198,11 @@
 
             display-name = "Numbers";
             bindings = <
-&kp F1  &kp F2  &kp F3     &kp F4    &kp F5    &kp F6                          &kp F7     &kp F8    &kp F9     &kp F10    &kp F11  &kp F12
-&trans  &trans  &kp COLON  &kp HASH  &kp SEMI  &kp AMPS                        &kp TILDE  &kp FSLH  &kp PLUS   &kp MINUS  &trans   &trans
-&trans  &kp N4  &kp N3     &kp N2    &kp N1    &kp N5                          &kp N9     &kp N0    &kp N6     &kp N7     &kp N8   &trans
-&trans  &trans  &kp LT     &kp GT    &kp EXCL  &kp AT     &trans       &trans  &kp PRCNT  &kp STAR  &kp COMMA  &kp DOT    &trans   &trans
-                           &trans    &trans    &kp UNDER  &kp EQUAL    &trans  &trans     &trans    &trans
+&kp F1  &kp F2     &kp F3     &kp F4    &kp F5    &kp F6                          &kp F7     &kp F8    &kp F9     &kp F10    &kp F11  &kp F12
+&trans  &trans     &kp COLON  &kp HASH  &kp SEMI  &kp AMPS                        &trans     &kp FSLH  &kp PLUS   &kp MINUS  &trans   &trans
+&trans  &kp N4     &kp N3     &kp N2    &kp N1    &kp N5                          &kp N9     &kp N0    &kp N6     &kp N7     &kp N8   &trans
+&trans  &kp TILDE  &kp LT     &kp GT    &kp EXCL  &kp AT     &trans       &trans  &kp PRCNT  &kp STAR  &kp COMMA  &kp DOT    &trans   &trans
+                              &trans    &trans    &kp UNDER  &kp EQUAL    &trans  &trans     &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
