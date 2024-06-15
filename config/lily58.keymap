@@ -67,33 +67,33 @@
         caps_word {
             bindings = <&caps_word>;
             key-positions = <40 39>;
-            layers = <0>;
+            layers = <0 1>;
             require-prior-idle-ms = <250>;
         };
 
         escape {
             bindings = <&kp ESC>;
             key-positions = <28 27>;
-            layers = <0 3 2>;
+            layers = <0 3 2 1>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <31 32>;
-            layers = <0 2 3>;
+            layers = <0 2 3 1>;
         };
 
         lock_screen {
             bindings = <&lock_screen>;
             key-positions = <1 0>;
             require-prior-idle-ms = <250>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         comment {
             bindings = <&ctrl_fslh>;
             key-positions = <45 46>;
-            layers = <0 3 2>;
+            layers = <0 3 2 1>;
         };
 
         to_colemak {
