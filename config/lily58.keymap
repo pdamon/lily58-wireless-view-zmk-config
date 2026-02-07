@@ -148,17 +148,6 @@
             key-positions = <31 33>;
             layers = <0 1 3>;
         };
-
-        to_colemak {
-            bindings = <&to 0>;
-            key-positions = <0 11>;
-            layers = <0>;
-        };
-
-        to_qwerty {
-            bindings = <&to 0>;
-            key-positions = <0 11>;
-        };
     };
 
     macros {
@@ -230,11 +219,11 @@
 
             display-name = "NavSym";
             bindings = <
-&kp C_MUTE  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP                         &kp F7     &kp F8     &kp F9        &kp F10    &kp F11          &kp F12
-&trans      &trans      &kp BSLH          &kp PIPE    &kp LBKT      &kp RBKT                             &kp PG_UP  &kp CARET  &kp UP_ARROW  &kp DLLR   &kp PAUSE_BREAK  &trans
-&trans      &kp DQT     &kp GRAVE         &kp QMARK   &kp LPAR      &kp RPAR                             &kp PG_DN  &kp LEFT   &kp DOWN      &kp RIGHT  &kp LC(Y)        &kp INS
-&trans      &trans      &trans            &trans      &kp LBRC      &kp RIGHT_BRACE  &trans    &trans    &kp TILDE  &kp HOME   &kp END       &kp PSCRN  &kp CAPS         &trans
-                                          &trans      &trans        &trans           &trans    &kp FSLH  &kp SQT    &trans     &trans
+&kp C_MUTE  &kp C_PREV       &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP                         &kp F7     &kp F8     &kp F9        &kp F10    &kp F11          &kp F12
+&trans      &kp PRINTSCREEN  &kp BSLH          &kp PIPE    &kp LBKT      &kp RBKT                             &kp PG_UP  &kp CARET  &kp UP_ARROW  &kp DLLR   &kp PAUSE_BREAK  &trans
+&trans      &kp DQT          &kp GRAVE         &kp QMARK   &kp LPAR      &kp RPAR                             &kp PG_DN  &kp LEFT   &kp DOWN      &kp RIGHT  &kp LC(Y)        &kp INS
+&trans      &trans           &trans            &trans      &kp LBRC      &kp RIGHT_BRACE  &trans    &trans    &kp TILDE  &kp HOME   &kp END       &trans     &kp CAPS         &trans
+                                               &trans      &trans        &trans           &trans    &kp FSLH  &kp SQT    &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -260,6 +249,8 @@
 &trans  &trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans  &mkp MB4        &mkp MB3        &mkp MB5         &trans  &trans
                                 &trans          &trans           &trans  &trans    &trans  &trans  &trans          &trans
             >;
+
+            label = "Mouse";
         };
 
         Gaming {
